@@ -60,7 +60,7 @@ export default class DonateWidget extends Vue {
   }
 
   get assertButtonActive () {
-    return (preset: string) => preset === this.donateValue
+    return (preset: number) => preset === +castToNumeric(this.donateValue)
   }
 
   get donateValue () {

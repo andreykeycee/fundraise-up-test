@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "client:dev": "yarn --cwd ./client run dev"
+    "install:all": "yarn --cwd ./client install && yarn --cwd ./server install",
+    "client:dev": "yarn --cwd ./client run dev",
+    "server:dev": "yarn --cwd ./server run dev"
   },
   "keywords": [],
   "author": "",
